@@ -1,4 +1,4 @@
-# Valheim Server in a Docker container
+# Valheim Server in a Docker Container
 
 Build with:
 
@@ -15,10 +15,10 @@ docker run -d --rm --net=host --name my-valheim-server \
   <instanc> "<servername>" <password> <port>
 ```
 
-- Set <instance> to the name you want to use for your configs and world - no whitespaces
-- Set <servername> to the name you want to have the server in the serverbrowser - can contain whitespaces, mind the ""
-- Set <password> to the password you want for your server - no whitespaces
-- Set <port> if you want it to be different from 2456
+- Set `<instance>` to the name you want to use for your configs and world - no whitespaces
+- Set `<servername>` to the name you want to have the server in the serverbrowser - can contain whitespaces, mind the ""
+- Set `<password>` to the password you want for your server - no whitespaces
+- Set `<port>` if you want it to be different from 2456
 
 The container will install the valheim server to /valheim. On the first run, mount an empty directory (/valheim/install/dir) from your host to /valheim in the container. The world and config will be saved to /valheim/install/dir/<instance> to make them persistent.
 
