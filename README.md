@@ -22,10 +22,14 @@ docker run -d --rm --net=host --name my-valheim-server \
 
 The container will install the valheim server to /valheim. On the first run, mount an empty directory (/valheim/install/dir) from your host to /valheim in the container. The world and config will be saved to /valheim/install/dir/<instance> to make them persistent.
 
-Additional information:
+## Additional information:
 
 - Minimum password length is 5 characters 
 - Password cant be in the server name.
 - You need to make sure the (udp) port you chose and the next 2 are being forwarded to the container.
   The default port is 2456.
+
+## Updating
+
+To update the valheim server, simply restart the container. It will fetch the latest version from the steam servers.
 
