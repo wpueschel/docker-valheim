@@ -23,7 +23,7 @@ export SteamAppId=892970
 # Create instance dir
 mkdir -p /valheim/$INSTANCE
 mkdir -p /root/.config/unity3d/IronGate
-ln -s /valheim/$INSTANCE /root/.config/unity3d/IronGate/Valheim 
+ln -sf /valheim/$INSTANCE /root/.config/unity3d/IronGate/Valheim 
 
 exec /valheim/valheim_server.x86_64 \
    -public 1 \
